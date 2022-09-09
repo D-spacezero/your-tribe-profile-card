@@ -1,0 +1,111 @@
+article {
+  background: radial-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(100 100% 60%), 
+    hsl(200 100% 60%), 
+    hsl(100 100% 60%) 
+  ) fixed;
+/*Achtergrond bindend maken aan text*/
+  -webkit-background-clip: text;
+/*textvulling uitsnijden*/
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+} 
+
+body {
+  background: #152238;
+  color: #152238;
+  min-block-size: 280vh;
+  min-inline-size: 100%;
+  padding: 7vmin;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui;
+  font-size: min(200%, 5vmin);
+}
+
+h1, p, body {
+  margin: 0;
+}
+
+h2.eigenschappen {
+  color:white !imporatant;
+}
+
+.hero-image{
+  border-radius:50%;
+  width:300px;
+  padding-top: 50px !important;
+
+
+}
+.toptext{
+  padding-top:100px;
+}
+
+.box-1{
+  align-content:left;
+}
+
+.active {
+  -webkit-text-fill-color: transparent !important;
+}
+
+.inactive {
+  -webkit-text-fill-color: #152238 !important;
+  padding-top:0px;
+  text-shadow: -1px 0 #152238, 0 1px #152238, 1px 0 #152238, 0 -1px #152238;
+}
+
+.inactive2 {
+  -webkit-text-fill-color: #152238 !important;
+  padding-top:330px;
+  text-shadow: -1px 0 #152238, 0 1px #152238, 1px 0 #152238, 0 -1px #152238;
+}
+
+.inactive3 {
+  -webkit-text-fill-color: #152238 !important;
+  padding-top:330px;
+  text-shadow: -1px 0 #152238, 0 1px #152238, 1px 0 #152238, 0 -1px #152238;
+}
+
+.inactive4 {
+  -webkit-text-fill-color: #152238 !important;
+  padding-top:330px;
+  text-shadow: -1px 0 #152238, 0 1px #152238, 1px 0 #152238, 0 -1px #152238;
+}
+
+.inactive5 {
+  -webkit-text-fill-color: #152238 !important;
+  padding-top:330px;
+  text-shadow: -1px 0 #152238, 0 1px #152238, 1px 0 #152238, 0 -1px #152238;
+}
+
+.bottext{
+  padding-bottom:200px;
+}
+
+h1 {
+  font-size: 10vmin;
+  line-height: 1.1;
+  max-inline-size: 15ch;
+  margin: auto;
+}
+
+p {
+  font-family: "Dank Mono", ui-monospace, monospace;
+  margin-top: 1ch;
+  line-height: 1.35;
+  max-inline-size: 40ch;
+  margin: auto;
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+  text-align: center;
+}

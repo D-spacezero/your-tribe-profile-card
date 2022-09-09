@@ -1,48 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FDND Visitekaartje</title>
-  <link rel="stylesheet" href="./styles/style.css">
+<meta charset="UTF-8">
+<title>HVA zelf introductie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="HVA opdracht 1"/>
+	<meta name="discription" content="HVA opdracht 1"/>
+	<meta name="Diego Dekker" content="HVA opdracht 1"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-
 <article>
-  <header>
-    <h1>Jane Doe</h1>
-    <p><em>Creative Frontend Developer in spé</em></p>
-    <button>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M4 8v-2a2 2 0 0 1 2 -2h2" />
-        <path d="M4 16v2a2 2 0 0 0 2 2h2" />
-        <path d="M16 4h2a2 2 0 0 1 2 2v2" />
-        <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
-      </svg>
-
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" fill="none" stroke-linecap="round" stroke-linejoin="round">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-        <path d="M15 19v-2a2 2 0 0 1 2 -2h2" />
-        <path d="M15 5v2a2 2 0 0 0 2 2h2" />
-        <path d="M5 15h2a2 2 0 0 1 2 2v2" />
-        <path d="M5 9h2a2 2 0 0 0 2 -2v-2" />
-      </svg>
-    </button>
-
-  </header>
-  
-  <img src="assets/creative-coder.png" alt="Creative Coder">
-
-  <dl>
-    <dt>HTML</dt><dd>🏆🏆🏆</dd>
-    <dt>CSS</dt><dd>🏆🏆</dd>
-    <dt>JavaScript</dt><dd>🏆🏆🏆🏆</dd>
-  </dl>
-  
-  <p>Het WEB is te gek! <br> Met HTML, CSS en JavaScript kan ik vette, interactieve web apps maken.</p>
+    <div class="">
+        <h1 class="toptext">Ik ben Diego Dekker<br></h1>
+            <img class="hero-image" src="media/self.jpg" alt="Diego Dekker">
+           <h1 class="active"><br>Scroll ↓</h1>    
+    </div>
+    <div class="inactive2 eigenschappen">
+        <h1 class="box-1">Eigenschappen</h1>
+        <h2>Sociaal</h2><br>
+        <h2>Sportief</h2><br>
+        <h2>Gedreven</h2><br>
+    </div>
+    <div class="inactive3">
+        <h1>Ik wil na deze opleiding graag doorstomen naar de opleiding Fontend Developer op het HVA. </h1>
+    </div>
+    <h1 class="inactive4">Code heeft me altijd al gefaccineerd en ik wil mij hierin dan ook meer verdiepen. </h1>
+    <h1 class="bottext inactive5">Wel ben ik erg dislexties dus een fout in de code is nog wel eens snel gemaakt.</h1>
 </article>
 
-  <script src="./scripts/script.js"></script>
+<script>
+	$(function() {
+    var header = $(".active");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 650) {
+            header.removeClass('active').addClass("inactive");
+        } else {
+            header.removeClass("inactive").addClass('active');
+        }
+        if (scroll >= 650) {
+            header.removeClass('active').addClass("inactive");
+        }
+    });
+});
+
+
+$(function() {
+    var header = $(".inactive2");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 650) {
+            header.removeClass('inactive2').addClass("active");
+        } else {
+            header.removeClass("active").addClass('inactive2');
+        }
+		if (scroll >= 1200) {
+            header.removeClass('active').addClass("inactive2");
+        }
+    });
+});
+
+$(function() {
+    var header = $(".inactive3");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 1200) {
+            header.removeClass('inactive3').addClass("active");
+        } else {
+            header.removeClass("active").addClass('inactive3');
+        }
+		if (scroll >= 1900) {
+            header.removeClass('active').addClass("inactive3");
+        }
+    });
+});
+
+$(function() {
+    var header = $(".inactive4");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 1900) {
+            header.removeClass('inactive4').addClass("active");
+        } else {
+            header.removeClass("active").addClass('inactive4');
+        }
+		if (scroll >= 3000) {
+            header.removeClass('active').addClass("inactive4");
+        }
+    });
+});
+
+$(function() {
+    var header = $(".inactive5");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 3000) {
+            header.removeClass('inactive5').addClass("active");
+        } else {
+            header.removeClass("active").addClass('inactive5');
+        }
+    });
+});
+</script>
 </body>
 </html>
